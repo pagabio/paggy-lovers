@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: darkslategrey;
+}
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 100px auto 50px;
+  font-weight: 300px;
+}
+
+form {
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
+  height: 80px;
+  background: darkgray;
+  display: flex;
+  align-items: center;
+}
+form > input {
+  flex: 1;
+  height: 100%;
+  outline: 0;
+  border: 0;
+
+  color: black;
+  font-size: 18px;
+  padding: 0 30px;
+}
+
+form button {
+  padding: 0 40px;
+  height: 100%;
+  background: darkgray;
+  color: black;
+  outline: 0;
+  border: 0;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  cursor: pointer;
+}
+
+::placeholder {
+  color: green;
+  font-size: 18px;
+}
+#show-More-btn {
+  background: grey;
+  color: black;
+  border: 0;
+  outline: 0;
+  padding: 10px 20px;
+  border-top-left-radius: 20px;
+  margin: 10px auto 100px;
+  cursor: pointer;
+  display: block;
+}
+#search-result {
+  width: 80%;
+  margin: 100px auto 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+}
+#search-result img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 5px;
+}
